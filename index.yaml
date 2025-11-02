@@ -1,0 +1,35 @@
+apiVersion: v1
+entries:
+  blocky:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: deprecated the chart, use the one from github.com/johanneskastl/helm-charts
+    apiVersion: v2
+    appVersion: v0.20
+    created: "2025-11-02T16:03:09.501053095Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.1
+    deprecated: true
+    description: DNS proxy as ad-blocker for local network
+    digest: 1ca7822e4e23a73c94f69d773d0795260644befc6adbabf27e5f258b7ae9d728
+    home: https://github.com/johanneskastl/blocky-helm-chart/tree/main/charts/blocky
+    icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
+    keywords:
+    - blocky
+    - adblock
+    - dns
+    kubeVersion: '>=1.19.0-0'
+    name: blocky
+    sources:
+    - https://github.com/0xERR0R/blocky
+    urls:
+    - https://github.com/johanneskastl/blocky-helm-chart/releases/download/blocky-11.0.0/blocky-11.0.0.tgz
+    version: 11.0.0
+generated: "2025-11-02T16:03:09.501068424Z"
