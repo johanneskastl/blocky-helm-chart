@@ -3,7 +3,8 @@ apiVersion: v2
 appVersion: v0.20
 description: DNS proxy as ad-blocker for local network
 name: blocky
-version: 10.5.5
+version: 11.0.0
+deprecated: true
 kubeVersion: ">=1.19.0-0"
 keywords:
   - blocky
@@ -13,9 +14,9 @@ home: https://github.com/johanneskastl/blocky-helm-chart/tree/main/charts/blocky
 icon: https://github.com/0xERR0R/blocky/raw/master/docs/blocky.svg?sanitize=true
 sources:
   - https://github.com/0xERR0R/blocky
-maintainers:
-  - name: johanneskastl
-    email: kastl@b1-systems.de
+# maintainers:
+#   - name: johanneskastl
+#     email: kastl@b1-systems.de
 dependencies:
   - name: common
     repository: https://library-charts.k8s-at-home.com
@@ -27,4 +28,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |-
     - kind: changed
-      description: Update appVersion to v0.20
+      description: deprecated the chart, use the one from github.com/johanneskastl/helm-charts
